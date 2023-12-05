@@ -36,7 +36,7 @@ const userSlice = createSlice({
     },
     toggleTheme: (state) => {
       const { emerald, night } = themes;
-      state.theme = state.theme === night ? emerald : night;
+      state.theme = state.theme === emerald ? night : emerald;
       //   setTheme(newTheme);
       document.documentElement.setAttribute("data-theme", state.theme);
       localStorage.setItem("theme", state.theme);
