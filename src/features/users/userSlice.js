@@ -10,7 +10,7 @@ const getUserFromLocalStorage = () => {
   return user;
 };
 const getThemeFromLocalStorage = () => {
-  const theme = localStorage.getItem("theme") || themes.night;
+  const theme = localStorage.getItem("theme") || themes.emerald;
   document.documentElement.setAttribute("data-theme", theme);
   return theme;
 };

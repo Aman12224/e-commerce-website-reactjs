@@ -16,7 +16,11 @@ export const loader = (store) => () => {
 const Checkout = () => {
   const cartTotal = useSelector((state) => state.cartState.cartTotal);
   if (cartTotal === 0) {
-    return <SectionTitle text="Your cart is empty" />;
+    return (
+      <div className="h-[19rem]">
+        <SectionTitle text="Your cart is empty" />
+      </div>
+    );
   }
 
   return (

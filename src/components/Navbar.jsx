@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className="navbar-start">
           <NavLink
             to="/"
-            className="items-center hidden text-3xl lg:flex btn btn-primary"
+            className="items-center hidden text-3xl italic font-medium capitalize lg:flex btn btn-primary"
           >
             C
           </NavLink>
